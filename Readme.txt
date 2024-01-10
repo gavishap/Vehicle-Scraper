@@ -1,22 +1,20 @@
-How to use:
+Vehicle-Scraper
+Vehicle-Scraper is a Python-based web scraping application designed to extract vehicle listing information from a specific website. The extracted data is stored and organized for further processing or analysis.
 
-1)You will need python 3.12 to run this program but any python 3.x should work.
+Key Features
+Web Scraping: The application uses Selenium, a powerful tool for controlling web browsers through programs and automating browser tasks. The presence of chromedriver.exe and geckodriver.log indicates the use of Chrome and Firefox drivers for Selenium.
 
-2)Install all the requirements in the requirements.txt file using the command:
+Data Extraction: The application likely targets specific HTML elements during the scraping process, as suggested by Element.py and elements.json.
 
-pip3 install -r requirements.txt
+Data Organization: The scraped data is organized into 'posted' and 'unposted' categories within the vehicle_listings/ directory, as indicated by the Lister.py file.
 
-in your terminal.
+Testing: The application includes a testing script (test.py), ensuring the reliability and robustness of the scraping process.
 
-3)Go to the accounts.json file and fill in all your facebook details. (dont need to change the id value)
+Technologies Used
+Python: The main programming language used in the project.
+Selenium: A framework for testing web applications, used here for automating browser tasks.
+JSON: Used for storing and transporting data (as seen in accounts.json and elements.json).
+Setup
+To run this project, you will need to install the required Python packages listed in requirements.txt.
 
-4) You must have google chrome and Firefox installed to run the program
-
-5)After you made sure to install the packages, go to test.py and run it. 
-
-
-It will download all the listings first from the site.
-Then it will 1 by 1 post each vehicle listing to facebook. Once you get rate limited, stop and resume in 3 days. 
-If it does not allow more listings, then rerun the program in a week. 
-When you rerun the program, it will not redownload listings that have been downloaded already and it will not post listings that have been posted already. 
-Each time you rerun the program, the program will scrape your new and old listings for newly added listings and post them to facebook.
+Please note that this is a high-level summary based on the provided workspace structure. For a more detailed description, the content of the individual files would need to be examined.
